@@ -9,3 +9,9 @@ $Primary: (
   D200: #c9d6df,
   D300: #52616b,
 );
+
+@each $var, $color in $Primary {
+  .#{$var} {
+    background-color: $color;
+  }
+}
